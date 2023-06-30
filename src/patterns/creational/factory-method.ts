@@ -49,7 +49,7 @@ abstract class AnimalCreator {
   public abstract createAnimal(name: string, age: number, breed: string): Animal;
 
   public displayAnimalInfo(name: string, age: number, breed: string): void {
-    const animal = this.createAnimal(name, age, breed);
+    const animal: Animal = this.createAnimal(name, age, breed);
     animal.displayInfo();
   }
 }

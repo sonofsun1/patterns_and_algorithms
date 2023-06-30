@@ -46,11 +46,11 @@ class Dog extends Animal {
 }
 
 // Client
-const originalCat = new Cat('Whiskers', 3, 'Persian');
-const clonedCat = originalCat.clone();
+const originalCat: Cat = new Cat('Whiskers', 3, 'Persian');
+const clonedCat: Cat = originalCat.clone();
 
-const originalDog = new Dog('Buddy', 5, 'Labrador Retriever');
-const clonedDog = originalDog.clone();
+const originalDog: Dog = new Dog('Buddy', 5, 'Labrador Retriever');
+const clonedDog: Dog = originalDog.clone();
 
 originalCat.displayInfo();
 clonedCat.displayInfo();

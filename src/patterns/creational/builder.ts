@@ -95,16 +95,16 @@ class AnimalDirector {
 }
 
 // Usage
-const animalDirector = new AnimalDirector();
+const animalDirector: AnimalDirector = new AnimalDirector();
 
-const catBuilder = new CatBuilder();
+const catBuilder: CatBuilder = new CatBuilder();
 animalDirector.setBuilder(catBuilder);
 animalDirector.constructAnimal();
-const cat = animalDirector.getAnimal();
+const cat: Animal = animalDirector.getAnimal();
 cat.getInfo();
 
-const dogBuilder = new DogBuilder();
+const dogBuilder: DogBuilder = new DogBuilder();
 animalDirector.setBuilder(dogBuilder);
 animalDirector.constructAnimal();
-const dog = animalDirector.getAnimal();
+const dog: Animal = animalDirector.getAnimal();
 dog.getInfo();

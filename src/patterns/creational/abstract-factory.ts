@@ -66,8 +66,8 @@ class ConcreteProductB2 implements ProductB {
 
 // Client code
 function clientCode(factory: AbstractFactory): void {
-  const productA = factory.createProductA();
-  const productB = factory.createProductB();
+  const productA: ProductA = factory.createProductA();
+  const productB: ProductB = factory.createProductB();
 
   productA.operationA();
   productB.operationB();
